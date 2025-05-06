@@ -1,0 +1,15 @@
+name: Front - Release Pipeline
+
+on:
+  push:
+    branches:
+      - 'release/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: staging
+
+
+::contentReference[oaicite:18]{index=18}
+ 
